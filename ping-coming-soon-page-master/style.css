@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+  padding: 25px;
+  margin: 10px auto;
+}
+
+.bold,
+p {
+  color: hsl(209, 33%, 12%);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 59%);
+}
+
+p {
+  font-weight: 600;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo {
+  width: 55px;
+  margin: 40px 0;
+}
+
+.search {
+  padding: 25px;
+}
+
+.form {
+  display: block;
+  padding: 13px 30px;
+  border-radius: 30px;
+  outline-style: none;
+  width: 100%;
+  margin: 3px 0;
+}
+
+input {
+  text-align: left;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+button {
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  box-shadow: 0 5px 10px hsl(223, 100%, 88%);
+  color: white;
+  font-weight: 600;
+}
+
+.error-message {
+  display: none;
+}
+
+.search.error input {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+.error-message.error {
+  display: block;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.search.error button {
+  transform: translateY(40px);
+}
+
+.dash {
+  margin: 35px 0 100px;
+}
+
+.share {
+  margin: 20px 0;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 30px;
+  margin: 5px;
+}
+
+i {
+  color: hsl(223, 87%, 63%);
+  font-size: 13px;
+}
+
+.copy {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .search {
+    display: flex;
+    padding: 25px 0;
+    column-gap: 10px;
+  }
+
+  .input {
+    position: relative;
+    flex: 70%;
+  }
+
+  button {
+    flex: 30%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .search.error button {
+    transform: none;
+  }
+
+  .error-message.error {
+    display: static;
+    position: absolute;
+    text-align: left;
+  }
+
+  .share {
+  }
+  .share-btn:hover {
+    background-color: hsl(223, 87%, 63%);
+  }
+
+  .share-btn:hover i {
+    color: white;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/logo.svg" alt="logo" class="logo" />
+      <h1>We are launching <span class="bold">soon!</span></h1>
+      <p class="text">Subscribe and get notified</p>
+      <div class="search" id="search">
+        <div class="input">
+          <input
+            type="email"
+            class="form text"
+            id="email"
+            placeholder="Your email address..."
+            required
+          />
+          <p class="error-message text" id="error-message">
+            Please provide a valid email address
+          </p>
+        </div>
+        <button type="submit" class="form text" id="submit">Notify Me</button>
+      </div>
+      <img src="./images/illustration-dashboard.png" alt="dash" class="dash" />
+      <div class="share">
+        <span class="share-btn"><i class="fab fa-facebook-f"></i></span>
+        <span class="share-btn"><i class="fab fa-twitter"></i></span>
+        <span class="share-btn"><i class="fab fa-instagram"></i></span>
+      </div>
+      <p class="text copy">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nur Askiah</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
